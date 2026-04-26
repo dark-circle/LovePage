@@ -6,8 +6,17 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to right, #fee140 0%, #fa709a 100%);
+  background-image: linear-gradient(
+    110deg,
+    #dfffe8 0%,
+    #8fe8d2 30%,
+    #c8fff4 50%,
+    #8fe8d2 70%,
+    #dfffe8 100%
+  );
+  background-size: 220% 220%;
   background-repeat: no-repeat;
+  animation: waveBackground 9s ease-in-out infinite alternate;
   font-size: 12px;
   overflow: auto;
 }
@@ -111,6 +120,31 @@ body {
   position: absolute;
   top: 100px;
   left: 0;
+}
+
+#clickImage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  max-width: 80vw;
+  max-height: 80vh;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes waveBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (max-width: 900px) {

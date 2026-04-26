@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>happycat & happydog</title>
+    <title>LiangBi & HanYiQing</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta
       name="viewport"
@@ -9,7 +9,7 @@
     />
     <meta
       name="description"
-      content="A blooming heart story for happycat and happydog."
+      content="A blooming heart story for LiangBi and HanYiQing."
     />
     <style type="text/css">
       @font-face {
@@ -27,61 +27,61 @@
     <div id="mainDiv">
       <div id="code">
         <span class="comments">##</span><br />
-        <span class="comments"># A tiny program for two happy friends.</span
+        <span class="comments"># A tiny program for two people in love.</span
         ><br />
         <span class="comments"
-          ># It draws a blooming heart for happycat and happydog.</span
+          ># It draws a blooming heart for LiangBi and HanYiQing.</span
         ><br />
         <span class="comments">##</span><br />
-        happycat = Cat(<span class="string">"happycat"</span>);<br />
-        happydog = Dog(<span class="string">"happydog"</span>);<br />
-        <span class="comments"># From the first hello, the story began.</span
+        LiangBi = Lover(<span class="string">"LiangBi"</span>);<br />
+        HanYiQing = Beloved(<span class="string">"HanYiQing"</span>);<br />
+        <span class="comments"># Was that first hello already a heartbeat?</span
         ><br />
-        happycat.meet(happydog)<br />
-        <span class="comments"># Then every ordinary day became brighter.</span
+        LiangBi.meet(HanYiQing)<br />
+        <span class="comments"># When did ordinary days start feeling like love?</span
         ><br />
-        happydog.smile_with(happycat)<br />
-        <span class="comments"># They walk together.</span><br />
-        walk(happycat, happydog)<br />
-        <span class="comments"># They share snacks together.</span><br />
-        snack(happycat, happydog)<br />
-        <span class="comments"># They chase little adventures together.</span
+        HanYiQing.smile_with(LiangBi)<br />
+        <span class="comments"># Will you walk beside me in every season?</span><br />
+        walk(LiangBi, HanYiQing)<br />
+        <span class="comments"># Can every small moment become our memory?</span><br />
+        snack(LiangBi, HanYiQing)<br />
+        <span class="comments"># Shall we keep chasing little adventures together?</span
         ><br />
-        adventure(happycat, happydog)<br />
-        <span class="comments"># Sometimes it rains.</span><br />
-        rainy_day(happycat, happydog, sometimes=<span class="keyword">True</span
+        adventure(LiangBi, HanYiQing)<br />
+        <span class="comments"># If the world turns rainy, will you stay?</span><br />
+        rainy_day(LiangBi, HanYiQing, sometimes=<span class="keyword">True</span
         >)<br />
-        <span class="comments"># But they always find the sunny corner.</span
+        <span class="comments"># And won't love always find its sunny corner?</span
         ><br />
-        happycat.stay_with(happydog)<br />
-        happydog.stay_with(happycat)<br />
-        <span class="comments"># Looking forward to every tomorrow.</span><br />
+        LiangBi.stay_with(HanYiQing)<br />
+        HanYiQing.stay_with(LiangBi)<br />
+        <span class="comments"># Can every tomorrow still begin with you?</span><br />
         while <span class="keyword">True</span>:<br />
         <span class="placeholder"></span
-        ><span class="keyword">if</span> happycat.with_(happydog):<br />
+        ><span class="keyword">if</span> LiangBi.with_(HanYiQing):<br />
         <span class="placeholder"></span
         ><span class="placeholder"></span>day = brighter<br />
         <span class="placeholder"></span
         ><span class="keyword">else</span>:<br />
         <span class="placeholder"></span
         ><span class="placeholder"></span>brighter = day<br />
-        <span class="comments"># happycat and happydog, always happy.</span
+        <span class="comments"># LiangBi and HanYiQing, always in love.</span
         ><br />
-        happycat.guard(happydog, forever=<span class="keyword">True</span
+        LiangBi.guard(HanYiQing, forever=<span class="keyword">True</span
         >)<br />
-        happydog.guard(happycat, forever=<span class="keyword">True</span
+        HanYiQing.guard(LiangBi, forever=<span class="keyword">True</span
         >)<br />
       </div>
       <div id="happyHeart">
         <canvas id="garden"></canvas>
         <div id="words">
           <div id="messages">
-            happycat and happydog have been together for
+            LiangBi and HanYiQing have been together for
             <div id="elapseClock"></div>
           </div>
           <div id="happyForever">
             Stay happy forever and ever.<br />
-            <div class="signature">- happycat | happydog</div>
+            <div class="signature">- LiangBi | HanYiQing</div>
           </div>
         </div>
       </div>
@@ -105,9 +105,7 @@
         $("#code").css("display", "none");
         document.execCommand("stop");
       } else {
-        setTimeout(function () {
-          startHappyAnimation();
-        }, 5000);
+        startHappyAnimation();
 
         timeElapse(together);
         setInterval(function () {
